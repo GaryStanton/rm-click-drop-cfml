@@ -1,0 +1,22 @@
+{
+    "name":"Royal Mail UK Click & Drop CFML",
+    "version":"0.1.0",
+    "author":"Gary Stanton",
+    "location":"GaryStanton/rm-click-drop-cfml#v0.1.0",
+    "createPackageDirectory":"true",
+    "packageDirectory":"RMClickDropCFML",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/GaryStanton/rm-click-drop-cfml"
+    },
+    "bugs":"https://github.com/GaryStanton/rm-click-drop-cfml/issues",
+    "slug":"RMClickDropCFML",
+    "shortDescription":"This module provides a wrapper for the UK Royal Mail Click & Drop web service",
+    "type":"modules",
+    "keywords":"Royal Mail UK Click Drop CFML ColdFusion Lucee",
+    "scripts":{
+        "postVersion":"package set location='GaryStanton/rm-click-drop-cfml#v`package version`'",
+        "onRelease":"publish",
+        "postPublish":"!git push --follow-tags"
+    }
+}
